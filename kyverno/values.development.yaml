@@ -1,0 +1,24 @@
+image:
+  tag: v1.8.5
+
+rbac:
+  enabled: true
+
+resources:
+  limits:
+    cpu: 250m
+    memory: 384Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+excludeKyvernoNamespace: true
+
+serviceMonitor:
+  enabled: true
+  additionalLabels:
+    ctd.ai/prometheus: prometheus
+
+metricsService:
+  enabled: true
+  port: 8000
