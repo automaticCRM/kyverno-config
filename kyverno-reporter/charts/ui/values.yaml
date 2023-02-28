@@ -154,13 +154,12 @@ podDisruptionBudget:
 ## Set to true to enable ingress record generation
 # ref to: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:
-  enabled: true
+  enabled: false
   className: ""
   # key/value
   labels: {}
   # key/value
-  annotations:
-    kubernetes.io/ingress.class: gce
+  annotations: []
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:

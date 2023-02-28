@@ -9,5 +9,14 @@ resources:
 ui:
   enabled: true
 
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: gce
+  hosts:
+    - host: kyverno.development.ctd.tools
+      paths:
+      - /
+
 kyvernoPlugin:
   enabled: true
