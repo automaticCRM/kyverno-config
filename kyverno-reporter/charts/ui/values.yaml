@@ -65,7 +65,7 @@ labelFilter: []
 
 # use redis as external log storage instead of an in memory store
 # recommended when using a HA setup with more then one replica
-# to get all logs on each instance 
+# to get all logs on each instance
 redis:
   enabled: false
   address: ""
@@ -154,12 +154,13 @@ podDisruptionBudget:
 ## Set to true to enable ingress record generation
 # ref to: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   # key/value
   labels: {}
   # key/value
-  annotations: {}
+  annotations:
+    kubernetes.io/ingress.class: gce
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:

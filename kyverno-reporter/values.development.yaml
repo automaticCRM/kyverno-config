@@ -9,10 +9,5 @@ resources:
 ui:
   enabled: true
 
-ingres:
-  enabled: true
-  annotations:
-    kubernetes.io/ingress.class: gce
-
 kyvernoPlugin:
   enabled: true
