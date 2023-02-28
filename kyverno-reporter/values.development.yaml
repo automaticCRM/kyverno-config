@@ -17,7 +17,9 @@ ui:
         paths:
           - path: /
             pathType: ImplementationSpecific
-            port: 8080
+            port: 8082
+  service:
+    port: 8082
 
 target:
   ui:
