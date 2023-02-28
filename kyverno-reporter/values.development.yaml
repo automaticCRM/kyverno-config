@@ -16,7 +16,8 @@ ingress:
   hosts:
     - host: kyverno.development.ctd.tools
       paths:
-      - /
+        - path: /
+          pathType: Prefix
 
 kyvernoPlugin:
   enabled: true
