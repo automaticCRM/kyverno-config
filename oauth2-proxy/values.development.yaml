@@ -4,7 +4,7 @@ config:
   existingSecret: karma-oauth-secrets
   configFile: |-
     email_domains = [ "ctd.ai" ]
-    upstreams = [ "http://kyverno:8080/" ]
+    upstreams = [ "http://kyverno-reporter-ui:8080/" ]
 
 externalSecrets:
   secretStore: gcp-sm-secret-store

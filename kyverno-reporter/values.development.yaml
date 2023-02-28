@@ -13,7 +13,7 @@ ui:
     annotations:
       kubernetes.io/ingress.class: gce
     hosts:
-      - host: kyverno-test.development.ctd.tools
+      - host: kyverno.development.ctd.tools
         paths:
           - path: /
             pathType: ImplementationSpecific
