@@ -10,16 +10,13 @@ ui:
   enabled: true
   ingress:
     enabled: true
-    annotations:
-      kubernetes.io/ingress.class: gce
+    className: nginx
     hosts:
       - host: kyverno.development.ctd.tools
         paths:
           - path: /
             pathType: ImplementationSpecific
-            port: 8082
-  service:
-    port: 8082
+            port: 8080
 
 target:
   ui:
