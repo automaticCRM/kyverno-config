@@ -16,7 +16,7 @@ ui:
       - host: kyverno-test.development.ctd.tools
         paths:
           - path: /
-            pathType: Prefix
+            pathType: ImplementationSpecific
 
 kyvernoPlugin:
   enabled: true
