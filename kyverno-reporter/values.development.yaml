@@ -19,9 +19,5 @@ ui:
             pathType: ImplementationSpecific
             port: 8082
 
-target:
-  ui:
-    host: kyverno.development.ctd.tools
-
 kyvernoPlugin:
   enabled: true
