@@ -15,7 +15,7 @@ ui:
     hosts:
       - host: kyverno.development.ctd.tools
         paths:
-          - path: /
+          - path: /#
             pathType: ImplementationSpecific
 
 kyvernoPlugin:
