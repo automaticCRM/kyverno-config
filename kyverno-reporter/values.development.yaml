@@ -12,7 +12,7 @@ ui:
     enabled: true
     className: nginx
     annotations:
-      nginx.ingress.kubernetes.io/auth-url: "http://kyverno.development.ctd.tools/oauth2/start"
+      nginx.ingress.kubernetes.io/auth-url: "http://kyverno.development.ctd.tools/oauth2"
     hosts:
       - host: kyverno.development.ctd.tools
         paths:
