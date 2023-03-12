@@ -14,4 +14,4 @@ ingress:
   className: nginx
   hosts:
     - kyverno.development.ctd.tools
-  path: /oauth/google
+  path: /oauth2/start
