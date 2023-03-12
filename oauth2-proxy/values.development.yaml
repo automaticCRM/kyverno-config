@@ -8,3 +8,10 @@ config:
 
 externalSecrets:
   secretStore: gcp-sm-secret-store
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - kyverno.development.ctd.tools
+  path: /oauth/google
