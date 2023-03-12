@@ -11,6 +11,8 @@ ui:
   ingress:
     enabled: true
     className: nginx
+    annotations:
+      nginx.ingress.kubernetes.io/auth-url: "http://kyverno.development.ctd.tools/oauth/google"
     hosts:
       - host: kyverno.development.ctd.tools
         paths:
